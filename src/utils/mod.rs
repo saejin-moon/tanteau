@@ -6,3 +6,6 @@ pub use math::*;
 
 pub mod random;
 pub use random::*;
+
+pub mod datetime;
+pub use datetime::*;
