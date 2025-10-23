@@ -1,5 +1,5 @@
 use core::f32;
-use super::math::*;
+use crate::utils::math::*;
 
 pub struct Color {
     red: u8,

@@ -1,6 +1,8 @@
 pub mod color;
-pub mod math;
-pub mod random;
 pub use color::*;
+
+pub mod math;
 pub use math::*;
+
+pub mod random;
 pub use random::*;
