@@ -1,11 +1,8 @@
-use tanteau::*;
+use tanto::*;
 
 fn main() {
     // basic math
-    let a = 1.;
-    let b: f32 = 2.;
-    println!("{}", min(a, b));
-    println!("{}", b.sin());
+    println!("{}", min(1., 2.));
     // random
     let mut rng = Rng::new();
     rng.set_min(4.).set_max(5.);
@@ -14,4 +11,9 @@ fn main() {
     let mut color = Color::new();
     color.red(24).green(128).blue(127);
     println!("{}", color.get_hex());
+    // datetime
+    let mut dt = DateTime::new();
+    println!("{}:{}:{} {}/{}/{}", dt.hour(), dt.minute(), dt.second(), dt.month(), dt.day(), dt.year());
+    dt.add(TimeUnit::Month, 2);
+    println!("{}:{}:{} {}/{}/{}", dt.hour(), dt.minute(), dt.second(), dt.month(), dt.day(), dt.year());
 }

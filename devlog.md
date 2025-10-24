@@ -26,3 +26,5 @@
 - updated the markdown files to be a bit more accurate and focused the vision of tanteau on what's feasible
 - began work on the `DateTime` impl and established its structure
 - name change from tanteau to tanto
+## oct 24, 2025
+- added getters and basics for addition and subtraction of `DateTime` impl. (unfinished)
